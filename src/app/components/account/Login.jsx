@@ -53,14 +53,14 @@ const FormLogin = ({ submit, errorLog }) => (
             <div className="flex items-center justify-between">
                 <Field
                     name="rememberMe"
-                    label="Remember me"
+                    label="ce souvenir de moi"
                     component={Checkbox}
                     value={true}
                 />
                 <div className="text-sm">
                     <Link to="/forgot-password">
                         <span className="font-medium text-primary-dark hover:text-primary cursor-pointer">
-                            Forgot your password?
+                            mot de passe oublié?
                         </span>
                     </Link>
                 </div>
@@ -112,17 +112,17 @@ const Login = () => {
     return (
         <div className="bg-white p-4 rounded-md shadow max-w-md w-full space-y-8 py-12 px-4 sm:px-6 lg:px-8">
             <div>
-                <div className="flex justify-center">
+                <div className="flex justify-center mt-40">
                     <img
                         className="h-12 w-auto sm:h-10 cursor-pointer"
-                        src="https://insy2s.com/insy2s/images/Logo-insy2s-INLINE-2021.svg"
+                        src="https://www.logolynx.com/images/logolynx/4b/4beebce89d681837ba2f4105ce43afac.png"
                         alt=""
                         width={200}
                         height={60}
                     />
                 </div>
                 <h2 className="mt-6 text-center text-3xl font-extrabold text-gray-800">
-                    Sign in to your account
+                    Connexion utilisateur
                 </h2>
             </div>
 

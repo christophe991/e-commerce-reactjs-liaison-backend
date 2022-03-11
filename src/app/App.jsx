@@ -1,6 +1,7 @@
 import React from 'react';
 import { Provider } from 'react-redux';
 
+
 import RoutesWithNavigation from './routes/RoutesWithNavigation';
 import { store } from './shared/redux-store/store';
 
@@ -12,9 +13,14 @@ import { store } from './shared/redux-store/store';
  */
 const App = () => {
     return (
+        <div>
         <Provider store={store}>
             <RoutesWithNavigation />
         </Provider>
+        
+        
+        
+        </div>
     );
 };
 

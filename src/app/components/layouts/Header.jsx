@@ -11,23 +11,18 @@ import {
 } from './../../shared/constants/urls/urlConstants';
 import { selectIsLogged, signOut } from './../../shared/redux-store/authenticationSlice';
 
-const Navbar = () => {
+const Header = () => {
     return (
-        <Disclosure as="nav" className="top-0 fixed z-50 w-full bg-white shadow-md">
+        <Disclosure as="nav" >
             {({ open }) => (
                 <>
-                    <div className="max-w-7xl mx-auto px-4 sm:px-6">
+                    <div className="max-w-7xl mx-auto bg-red-600  px-4 sm:px-6">
                         <div className="flex justify-between items-center py-6 md:justify-start md:space-x-10">
-                            <div>
+                            <div className='flex justify-between items-center  md:space-x-10 '>
                                 <Link to={URL_HOME}>
-                                    <img
-                                        className="h-8 w-auto sm:h-10 cursor-pointer"
-                                        src="https://insy2s.com/insy2s/images/Logo-insy2s-INLINE-2021.svg"
-                                        alt=""
-                                        width={200}
-                                        height={60}
-                                    />
+                                   <img src="../src/app/assets/images/gaming1.png"/>
                                 </Link>
+                                <h1 className='text-white'>Bienvenue sur le site</h1>
                             </div>
 
                             <div className="hidden md:flex items-center justify-end flex-1 lg:w-0">
@@ -77,7 +72,7 @@ const Navbar = () => {
     );
 };
 
-export default Navbar;
+export default Header;
 
 const ConnectionBtn = () => {
     const isLogged = useSelector(selectIsLogged);
@@ -92,10 +87,11 @@ const ConnectionBtn = () => {
         return (
             <div className="flex justify-center md:items-center flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4">
                 <Link to={URL_LOGIN}>
-                    <div className="link">Sign in</div>
+                <button className="btn ">Connexion</button>
+                
                 </Link>
                 <Link to={URL_REGISTER}>
-                    <button className="btn btn-green">Sign up</button>
+                    <button className="btn ">Inscription</button>
                 </Link>
             </div>
         );

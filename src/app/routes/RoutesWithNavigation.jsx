@@ -3,8 +3,13 @@ import { useSelector } from 'react-redux';
 import { BrowserRouter } from 'react-router-dom';
 import { ToastContainer } from 'react-toastify';
 
+
+
+
 import IdleTimerCustom from './../components/account/IdleTimerCustom';
-import Navbar from './../components/layouts/Navbar';
+import Header from './../components/layouts/Header';
+import Nav from './../components/layouts/Nav';
+import Footer from './../components/layouts/Footer';
 import { selectIsLogged } from './../shared/redux-store/authenticationSlice';
 import Routes from './Routes';
 
@@ -30,10 +35,20 @@ const RoutesWithNavigation = () => {
         <BrowserRouter>
             <div className="h-full flex flex-col bg-gray-100 cursor-default">
                 {isLogged && <IdleTimerCustom />}
-                <Navbar />
+                <Header />
+                
+                
+
+                
+                
+                
                 <main className="h-full mt-24">
+                    <Nav />
                     <Routes />
+                    <Footer />
+                    
                 </main>
+               
                 <ToastContainer
                     toastClassName={({ type }) =>
                         contextClass[type || 'default'] +
