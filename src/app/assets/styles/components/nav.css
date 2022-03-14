@@ -34,14 +34,16 @@
   .services:hover>.sous-menu{
       max-height:150px; /* Pour afficher le menu après le "hover" */
       /* overflow:visible; */
+      width: 200px;/*Agrandir le sous menu en largeur*/
   }
   .sous-menu>li{
     text-align: center;  
     background-color:#777;
-    line-height: 1.5em;
+    line-height: 2em;
     font-size: 1em;
     padding: 5px 0;
     border: 1px #fff solid; 
+    
   }
   .sous-menu>li>a{
     text-decoration: none;
@@ -56,5 +58,5 @@
     margin-top: -31px;
 }
 #navbar{
-  margin-top: -100px;
+  margin-top: -30px;
 }

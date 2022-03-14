@@ -94,7 +94,7 @@ const FormLogin = ({ submit, errorLog }) => (
  *
  * @author Peter Mollet
  */
-const Login = () => {
+const Login = async () => {
     const [errorLog, setErrorLog] = useState(false);
     const dispatch = useDispatch();
     const history = useHistory();
@@ -110,6 +110,7 @@ const Login = () => {
             .catch(() => setErrorLog(true));
     };
     return (
+       
         <div className="bg-white p-4 rounded-md shadow max-w-md w-full space-y-8 py-12 px-4 sm:px-6 lg:px-8">
             <div>
                 <div className="flex justify-center mt-40">

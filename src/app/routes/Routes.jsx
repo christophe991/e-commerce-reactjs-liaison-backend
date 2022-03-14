@@ -8,11 +8,14 @@ import {
     URL_ADMIN_HOME,
     URL_HOME,
     URL_LOGIN,
+    URL_REGISTER,
 } from '../shared/constants/urls/urlConstants';
 import { customHistory } from '../shared/services/historyServices';
 import AdminHomeView from '../views/AdminHomeView';
 import HomeView from '../views/HomeView';
+import Login from '../components/account/Login';
 import LoginView from '../views/LoginView';
+import Register from '../components/account/Register';
 
 
 /**
@@ -24,8 +27,9 @@ import LoginView from '../views/LoginView';
 const Routes = () => {
     return (
         <Switch history={customHistory}>
-            <PrivateRoute exact path={URL_LOGIN} component={LoginView} />
-            
+             
+            <Route exact path={URL_LOGIN} component={Login}/>
+            <Route exact path={URL_REGISTER} component={Register} />
             <PrivateRoute
                 path={URL_ADMIN_HOME}
                 component={AdminHomeView}
@@ -34,8 +38,9 @@ const Routes = () => {
             />
             
             <Route path={URL_HOME} component={HomeView} />
-            
+           
         </Switch>
+        
     );
 };
 

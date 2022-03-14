@@ -9,9 +9,12 @@ import Login from './../components/account/Login';
  * @author Peter Mollet
  */
 const LoginView = () => {
+    console.log('login')
     return (
-        <div className="flex items-center justify-center h-full">
+        <div >
             <Login className="" />
+       
+            
         </div>
     );
 };

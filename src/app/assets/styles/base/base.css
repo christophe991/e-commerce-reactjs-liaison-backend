@@ -54,6 +54,7 @@ a .btn{
 /**************************NAVBAR**********************/
 nav{
     background-color: #24D26D;
+    
 }
 /********************CAROUSEL************************/
 
@@ -160,7 +161,7 @@ nav{
     left: -10px;
     padding: 2px;
     position: absolute;
-    top: 0;
+    top: 32%;
     transform: rotate(135deg) translateY(-50%);
     transition: left 0.15s ease-in-out;
     width: 4px;

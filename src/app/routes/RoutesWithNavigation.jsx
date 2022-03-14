@@ -12,6 +12,9 @@ import Nav from './../components/layouts/Nav';
 import Footer from './../components/layouts/Footer';
 import { selectIsLogged } from './../shared/redux-store/authenticationSlice';
 import Routes from './Routes';
+import { URL_LOGIN } from '../shared/constants/urls/urlConstants';
+
+
 
 const contextClass = {
     success: 'bg-green-600',
@@ -36,19 +39,21 @@ const RoutesWithNavigation = () => {
             <div className="h-full flex flex-col bg-gray-100 cursor-default">
                 {isLogged && <IdleTimerCustom />}
                 <Header />
-                
+                <Nav />
                 
 
                 
                 
                 
                 <main className="h-full mt-24">
-                    <Nav />
-                    <Routes />
-                    <Footer />
+                    
+                    <Routes/>
+                   
+                    
+                    
                     
                 </main>
-               
+               <Footer />
                 <ToastContainer
                     toastClassName={({ type }) =>
                         contextClass[type || 'default'] +
