@@ -13,6 +13,7 @@ import Footer from './../components/layouts/Footer';
 import { selectIsLogged } from './../shared/redux-store/authenticationSlice';
 import Routes from './Routes';
 import { URL_LOGIN } from '../shared/constants/urls/urlConstants';
+import CommercialHomeView from '../views/CommercialHomeView';
 
 
 
@@ -40,6 +41,7 @@ const RoutesWithNavigation = () => {
                 {isLogged && <IdleTimerCustom />}
                 <Header />
                 <Nav />
+                
                 
 
                 

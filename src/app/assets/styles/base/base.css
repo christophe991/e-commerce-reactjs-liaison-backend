@@ -36,6 +36,7 @@ img{
 }
 .btn{
     background-color: #0086FF;
+    
 }
 .btn:hover{
     background-color: #24D26D;
@@ -215,6 +216,42 @@ nav{
   .gallery-nav li.gallery-item-selected {
     background: #555;
   }
-  /************************FOOTER*******************/
+  /************************FORMULAIRE*******************/
+  .btn-form{
+    color: blanchedalmond;
+    margin-left: 250px;
+    background-color: #0086FF;
+    width: 100px;
+    height: 40px;
+    border-radius: 5px;
+  }
+  .btn-form:hover{
+    color: blanchedalmond;
+    background-color: #24D26D;
+  }
+  #btn-form{
+    color: blanchedalmond;
+    margin-left: 130px;
+    background-color: #0086FF;
+    width: 100px;
+    height: 40px;
+    border-radius: 5px;
+  }
+  #btn-form:hover{
+    color: blanchedalmond;
+    background-color: #24D26D;
+  }
+  #form{
+    margin-left: 150px;
+  }
+  #marge-form{
+    margin-left: 450px;
+    margin-top: 20px;
+  }
+  #background{
+    width: 80%;
+    margin-left: 150px;
+  }
+ 
 
 
